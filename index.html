@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourest</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="./lib/css/style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="top-bar">
+                <div class="container d-md-flex justify-content-md-between">
+                    <div class="top-left">
+                        <div class="header-contact-info">
+                            <p>
+                                <i class="fa fa-phone"></i> Any Questions? Call Us: 1-223-355-2214
+                            </p>
+                        </div>
+                    </div>
+                    <div class="top-right">
+                        <ul>
+                            <li>
+                                <a title="Login" href="./login.html">
+                                    <span class="fa fa-sign-in"></span>Login </a>
+                            </li>
+                            <li>
+                                <a title="Register Now" href="./register.html">
+                                    <span class="fa fa-user"></span> Register Now </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-md-flex justify-content-md-between">
+                <div id="logo">
+                    <a href="./index.html">
+                        <img src="./images/logo@2x.png" alt="">
+                    </a>
+                </div>
+                <div id="primary-menu">
+                    <div class="dt-menu-toggle" id="dt-menu-toggle">
+                        Menu
+                        <i class="fa-regular fa-bars dt-menu-toggle-icon"></i>
+                    </div>
+                    <nav id="main-menu">
+                        <ul class="menu" id="menu-main-menu">
+                            <li class="menu-item current-item">
+                                <a href="./index.html">
+                                    <i class="fa fa-home"></i> Home
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./hotels.html">
+                                    <i class="fa fa-coffee"></i> Hotels
+                                </a>
+                            </li>
+                            <li class="menu-item has-submenu">
+                                <a href="./about.html">
+                                    <i class="fa fa-gift"></i> Pages
+                                </a>
+                                <ul class="submenu" style="display: none;">
+                                    <li class="menu-item">
+                                        <a href="./about.html">about</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="./contact.html">
+                                            contact
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a class="dt-menu-expand">+</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./places.html">
+                                    <i class="fa fa-plane"></i> Places
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./gallery.html">
+                                    <i class="fa fa-camera"></i> Gallery
+                                </a>
+                            </li>
+                            <li class="menu-item has-submenu">
+                                <a href="./shop.html">
+                                    <i class="fa fa-shopping-cart"></i> Packages
+                                </a>
+                                <ul class="submenu" style="display: none;">
+                                    <li class="menu-item">
+                                        <a href="./cart.html">cart</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="./checkout.html">
+                                            checkout
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="./account.html">
+                                            account
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="./wishlist.html">
+                                            wishlist
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a class="dt-menu-expand">+</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./blog.html">
+                                    <i class="fa fa-pencil"></i> Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+        <main class="main">
+            <section class="banner">
+                <div class="banner-slide">
+                    <div class="item">
+                        <img src="./images/man-relaxing-on-chair.png" alt="" class="mask-img">
+                        <img src="./images/bg1.jpg" alt="" class="img-responsive">
+                        <p>An epitome of a travel website</p>
+                    </div>
+                    <div class="item">
+                        <img src="./images/bg2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="container position-relative">
+                    <div class="search-container">
+                        <div class="dt-tabs-container">
+                            <ul class="dt-tabs-list nav nav-tabs border-0" role="tablist">
+                                <li>
+                                    <a href="" data-toggle="tab" data-target="#hotels" class="active">hotels</a>
+                                </li>
+                                <li>
+                                    <a href="" data-toggle="tab" data-target="#packages">packages</a>
+                                </li>
+                                <li>
+                                    <a href="" data-toggle="tab" data-target="#places">places</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="hotels" role="tabpanel">
+                                    <form name="" action="" method="post">
+                                        <div>
+                                            <input type="text" name="txthotelname" placeholder="Type Hotel name here...">
+                                        </div>
+                                        <div>
+                                            <div class="selection-box">
+                                                <select name="cmbcity">
+                                                        <option value="">Choose City</option>
+                                                        <option value="bangalore-india">Bangalore, India</option>
+                                                        <option value="brisbane-australia">Brisbane, Australia</option>
+                                                        <option value="chennai-india">Chennai, India</option>
+                                                        <option value="coimbatore-india">Coimbatore, India</option>
+                                                        <option value="delhi-india">Delhi, India</option>
+                                                        <option value="london-uk">London, UK</option>
+                                                        <option value="melbourne-australia">Melbourne, Australia</option>
+                                                        <option value="new-york-us">New York, US</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="selection-box">
+                                                <select name="cmbcat">
+                                                    <option value="">Choose Category</option>
+                                                    <option value="batchelor">Batchelor</option>
+                                                    <option value="business">Business</option>
+                                                    <option value="family">Family</option>
+                                                    <option value="romance">Romance</option>                        
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="select-price">
+                                            <div class="selection-box">
+                                                <select name="cmbminprice">
+                                                    <option value="">Min Price</option>                        
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="select-price price-last">
+                                            <div class="selection-box">
+                                                <select name="cmbmaxprice">
+                                                    <option value="">Max Price</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="selection-box">
+                                                <select name="cmboffers">
+                                                    <option value="">Choose Offer</option>                        
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <input name="subsearch" type="submit" value="Find Hotels">
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade " id="packages" role="tabpanel">
+                                    <form name="" action="" method="post">
+                                        <div>
+                                            <input type="text" name="txthotelname" placeholder="Type Packages name here...">
+                                        </div>
+                                        <div>
+                                            <div class="selection-box">
+                                                <select name="cmbcity">
+                                                        <option value="">Choose City</option>
+                                                        <option value="bangalore-india">Bangalore, India</option>
+                                                        <option value="brisbane-australia">Brisbane, Australia</option>
+                                                        <option value="chennai-india">Chennai, India</option>
+                                                        <option value="coimbatore-india">Coimbatore, India</option>
+                                                        <option value="delhi-india">Delhi, India</option>
+                                                        <option value="london-uk">London, UK</option>
+                                                        <option value="melbourne-australia">Melbourne, Australia</option>
+                                                        <option value="new-york-us">New York, US</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="selection-box">
+                                                <select name="cmbcat">
+                                                    <option value="">Choose Category</option>
+                                                    <option value="batchelor">Batchelor</option>
+                                                    <option value="business">Business</option>
+                                                    <option value="family">Family</option>
+                                                    <option value="romance">Romance</option>                        
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="select-price">
+                                            <div class="selection-box">
+                                                <select name="cmbminprice">
+                                                    <option value="">Min Price</option>                        
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="select-price price-last">
+                                            <div class="selection-box">
+                                                <select name="cmbmaxprice">
+                                                    <option value="">Max Price</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="selection-box">
+                                                <select name="cmboffers">
+                                                    <option value="">Choose No.of Persons</option>                        
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <input name="subsearch" type="submit" value="Find Packages">
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade " id="places" role="tabpanel">
+                                    <form name="" action="" method="post">
+                                        <div>
+                                            <input type="text" name="txthotelname" placeholder="Type Places name here...">
+                                        </div>
+                                        <div>
+                                            <div class="selection-box">
+                                                <select name="cmbcity">
+                                                        <option value="">Choose City</option>
+                                                        <option value="bangalore-india">Bangalore, India</option>
+                                                        <option value="brisbane-australia">Brisbane, Australia</option>
+                                                        <option value="chennai-india">Chennai, India</option>
+                                                        <option value="coimbatore-india">Coimbatore, India</option>
+                                                        <option value="delhi-india">Delhi, India</option>
+                                                        <option value="london-uk">London, UK</option>
+                                                        <option value="melbourne-australia">Melbourne, Australia</option>
+                                                        <option value="new-york-us">New York, US</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="selection-box">
+                                                <select name="cmbcat">
+                                                    <option value="">Choose Category</option>
+                                                    <option value="batchelor">Batchelor</option>
+                                                    <option value="business">Business</option>
+                                                    <option value="family">Family</option>
+                                                    <option value="romance">Romance</option>                        
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <input name="subsearch" type="submit" value="Find Places">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="dt-invisible-medium"></div>
+            <section class="fullwidth-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="dt-event">
+                                <h4><a href="./detail-event.html">Ice Skating</a></h4>
+                                <div class="event-thumb">
+                                    <a href="./detail-event.html" title="">
+                                        <img width="420" height="287" src="./images/event.jpg" class="" alt="" loading="lazy" title="" sizes="(max-width: 420px) 100vw, 420px">
+                                        <div class="image-overlay">
+                                            <span class="image-overlay-inside"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <p>Phasellus faucibus consequat lacus, metus iaculis. Curabitur eget libero, interde, libero. Etiam vel mauris placerat, suscipit nunc...</p>
+                                <div class="dt-event-detail">
+                                    <div class="event-price">
+                                        <p>Starts From</p>
+                                        <span>$150</span>
+                                    </div>
+                                    <a href="./detail-event.html" class="dt-sc-button too-small">View details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dt-event">
+                                <h4><a href="./detail-event.html">MOUNTAIN TREKKING</a></h4>
+                                <div class="event-thumb">
+                                    <a href="./detail-event.html" title="">
+                                        <img width="420" height="287" src="./images/event1.jpg" class="" alt="" loading="lazy" title="" sizes="(max-width: 420px) 100vw, 420px">
+                                        <div class="image-overlay">
+                                            <span class="image-overlay-inside"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <p>Phasellus faucibus consequat lacus, metus iaculis. Curabitur eget libero, interde, libero. Etiam vel mauris placerat, suscipit nunc...</p>
+                                <div class="dt-event-detail">
+                                    <div class="event-price">
+                                        <p>Starts From</p>
+                                        <span>$150</span>
+                                    </div>
+                                    <a href="./detail-event.html" class="dt-sc-button too-small">View details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dt-event">
+                                <h4><a href="./detail-event.html">SURFING IN SEA</a></h4>
+                                <div class="event-thumb">
+                                    <a href="./detail-event.html" title="">
+                                        <img width="420" height="287" src="./images/event2.jpg" class="" alt="" loading="lazy" title="" sizes="(max-width: 420px) 100vw, 420px">
+                                        <div class="image-overlay">
+                                            <span class="image-overlay-inside"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <p>Phasellus faucibus consequat lacus, metus iaculis. Curabitur eget libero, interde, libero. Etiam vel mauris placerat, suscipit nunc...</p>
+                                <div class="dt-event-detail">
+                                    <div class="event-price">
+                                        <p>Starts From</p>
+                                        <span>$150</span>
+                                    </div>
+                                    <a href="./detail-event.html" class="dt-sc-button too-small">View details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="dt-invisible"></div>
+            <section class="fullwidth-section grey-bg">
+                <div class="container">
+                    <div class="welcome-txt aligncenter">
+                        <h2>Welcome to Trendy Travel</h2>
+                        <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        </p>
+                        <div class="dt-invisible "></div>
+                        <a href="#" target="_blank" class="dt-sc-button small green">Browse Features</a>
+                        <a href="#" target="_blank" class="dt-sc-button small blue">Purchase Theme</a>
+                    </div>
+                </div>
+            </section>
+            <div class="dt-invisible"></div>
+            <div class="dt-invisible-small"></div>
+            <section class="fullwidth-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 column">
+                            <div class="dt-sc-icon-cont">
+                                <div class="icon">
+                                    <img src="./images/ser-icon1.png" alt="">
+                                </div>
+                                <h4>
+                                    <a href="#" target="_blank">
+                                        Special Activities
+                                    </a>
+                                </h4>
+                                <p>
+                                    Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 column">
+                            <div class="dt-sc-icon-cont">
+                                <div class="icon">
+                                    <img src="./images/ser-icon2.png" alt="">
+                                </div>
+                                <h4>
+                                    <a href="#" target="_blank">
+                                        Travel Arrangements
+                                    </a>
+                                </h4>
+                                <p>
+                                    Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 column">
+                            <div class="dt-sc-icon-cont">
+                                <div class="icon">
+                                    <img src="./images/ser-icon3.png" alt="">
+                                </div>
+                                <h4>
+                                    <a href="#" target="_blank">
+                                       Private Guide
+                                    </a>
+                                </h4>
+                                <p>
+                                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 column">
+                            <div class="dt-sc-icon-cont">
+                                <div class="icon">
+                                    <img src="./images/ser-icon4.png" alt="">
+                                </div>
+                                <h4>
+                                    <a href="#" target="_blank">
+                                        Location Manager
+                                    </a>
+                                </h4>
+                                <p>
+                                    Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="dt-invisible-medium"></div>
+            <section class="fullwidth-section">
+                <div class="container">
+                    <h2 class="section-title ">Best Holiday Packages</h2>
+                    <div class="package-wrapper">
+                        <div class="column">
+                            <div class="package-item">
+                                <div class="package-thumb">
+                                    <a href="./package-holiday.html">
+                                        <img src="./images/hold1.jpg" alt="">
+                                        <div class="image-overlay">
+                                            <span class="image-overlay-inside"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="package-details">
+                                    <h5><a href="./package-holiday.html">Hot Baloon Special Journey</a></h5>
+                                    <p>Dpm, Cbe, Tamilnadu</p>
+                                    <div class="package-content">
+                                        <ul class="package-meta">
+                                            <li>
+                                                <span class="fa fa-calendar"></span>No of Days: 4
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-user"></span>People: 3
+                                            </li>
+                                        </ul>
+                                        <span class="package-price">$154</span>
+                                        <a href="./package-holiday.html" class="dt-sc-button too-small">View details</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="package-item">
+                                <div class="package-thumb">
+                                    <a href="./package-holiday.html">
+                                        <img src="./images/hold2.jpg" alt="">
+                                        <div class="image-overlay">
+                                            <span class="image-overlay-inside"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="package-details">
+                                    <h5><a href="./package-holiday.html">Hot Baloon Special Journey</a></h5>
+                                    <p>Dpm, Cbe, Tamilnadu</p>
+                                    <div class="package-content">
+                                        <ul class="package-meta">
+                                            <li>
+                                                <span class="fa fa-calendar"></span>No of Days: 4
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-user"></span>People: 3
+                                            </li>
+                                        </ul>
+                                        <span class="package-price">$154</span>
+                                        <a href="./package-holiday.html" class="dt-sc-button too-small">View details</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="package-item">
+                                <div class="package-thumb">
+                                    <a href="./package-holiday.html">
+                                        <img src="./images/hold3.jpg" alt="">
+                                        <div class="image-overlay">
+                                            <span class="image-overlay-inside"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="package-details">
+                                    <h5><a href="./package-holiday.html">Hot Baloon Special Journey</a></h5>
+                                    <p>Dpm, Cbe, Tamilnadu</p>
+                                    <div class="package-content">
+                                        <ul class="package-meta">
+                                            <li>
+                                                <span class="fa fa-calendar"></span>No of Days: 4
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-user"></span>People: 3
+                                            </li>
+                                        </ul>
+                                        <span class="package-price">$154</span>
+                                        <a href="./package-holiday.html" class="dt-sc-button too-small">View details</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="package-item">
+                                <div class="package-thumb">
+                                    <a href="./package-holiday.html">
+                                        <img src="./images/hold4.jpg" alt="">
+                                        <div class="image-overlay">
+                                            <span class="image-overlay-inside"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="package-details">
+                                    <h5><a href="./package-holiday.html">Hot Baloon Special Journey</a></h5>
+                                    <p>Dpm, Cbe, Tamilnadu</p>
+                                    <div class="package-content">
+                                        <ul class="package-meta">
+                                            <li>
+                                                <span class="fa fa-calendar"></span>No of Days: 4
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-user"></span>People: 3
+                                            </li>
+                                        </ul>
+                                        <span class="package-price">$154</span>
+                                        <a href="./package-holiday.html" class="dt-sc-button too-small">View details</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="package-item">
+                                <div class="package-thumb">
+                                    <a href="./package-holiday.html">
+                                        <img src="./images/hold5.jpg" alt="">
+                                        <div class="image-overlay">
+                                            <span class="image-overlay-inside"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="package-details">
+                                    <h5><a href="./package-holiday.html">Hot Baloon Special Journey</a></h5>
+                                    <p>Dpm, Cbe, Tamilnadu</p>
+                                    <div class="package-content">
+                                        <ul class="package-meta">
+                                            <li>
+                                                <span class="fa fa-calendar"></span>No of Days: 4
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-user"></span>People: 3
+                                            </li>
+                                        </ul>
+                                        <span class="package-price">$154</span>
+                                        <a href="./package-holiday.html" class="dt-sc-button too-small">View details</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="dt-invisible"></div>
+            <section class="fullwidth-section grey-bg">
+                <div class="container">
+                    <h2 class="section-title aligncenter">Our Client’s Words</h2>
+                    <div class="testimonial-wrapper">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-item">
+                                <div class="dt-sc-testimonial">
+                                    <div class="author">
+                                        <img src="https://trendytraveldv.wpengine.com/wp-content/uploads/2014/07/author-img2.jpg" alt="Perry Long" title="Perry Long">
+                                    </div>
+                                    <blockquote>
+                                        <q>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."</q>
+                                    </blockquote>
+                                    <div class="author-detail">
+                                        Jamie Hunt,
+                                        <span>
+                                            <span>Creative Artist@Adobe</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <div class="dt-sc-testimonial">
+                                    <div class="author">
+                                        <img src="https://trendytraveldv.wpengine.com/wp-content/uploads/2014/07/author-img2.jpg" alt="Perry Long" title="Perry Long">
+                                    </div>
+                                    <blockquote>
+                                        <q>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."</q>
+                                    </blockquote>
+                                    <div class="author-detail">
+                                        Jamie Hunt,
+                                        <span>
+                                            <span>Creative Artist@Adobe</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="dt-invisible-small"></div>
+            <div class="dt-invisible"></div>
+            <section class="fullwidth-section full-tab">
+                <div class="container">
+                    <div class="dt-tabs-container">
+                        <ul class="dt-tabs-frame nav">
+                            <li class="">
+                                <a class="nav-link active" id="trendy-tab" data-toggle="tab" href="#trendy" role="tab" aria-controls="trendy" aria-selected="true">Why Trendy Travel ?</a>
+                            </li>
+                            <li class="">
+                                <a class="nav-link" id="features-tab" data-toggle="tab" href="#features" role="tab" aria-controls="features" aria-selected="false">Theme Features</a>
+                            </li>
+                            <li class="">
+                                <a class="nav-link" id="multiple-tab" data-toggle="tab" href="#multiple" role="tab" aria-controls="multiple" aria-selected="false">Multiple Elements</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="trendy" role="tabpanel" aria-labelledby="trendy-tab">
+                                <div class="tabs-frame-content row">
+                                    <div class="col-md-7">
+                                        <h4>Why should you love trendy travel?</h4>
+                                        <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,
+                                            or randomised words which don’t look even slightly believable.
+                                        </p>
+                                        <div class="dt-invisible-small"></div>
+                                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
+                                        generator on the Internet.
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img src="./images/responsive.png" alt="" class="responsive-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="features" role="tabpanel" aria-labelledby="features-tab">
+                                <div class="tabs-frame-content row">
+                                    <div class="col-md-7">
+                                        <h4>Theme Features</h4>
+                                        <div class="dt-invisible-small"></div>
+                                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
+                                        generator on the Internet.
+                                        <div class="dt-invisible-small"></div>
+                                        Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even
+                                        slightly believable.
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img src="./images/responsive.png" alt="" class="responsive-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="multiple" role="tabpanel" aria-labelledby="multiple-tab">
+                                <div class="tabs-frame-content row">
+                                    <div class="col-md-7">
+
+                                        <h4>Multiple Elements</h4>
+                                        <div class="dt-invisible-small"></div>
+                                        Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even
+                                        slightly believable.
+                                        <div class="dt-invisible-small"></div>
+                                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
+                                        generator on the Internet.
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img src="./images/responsive.png" alt="" class="responsive-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="dt-invisible-small"></div>
+            <section class="fullwidth-section video dt-parallax-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Background Parallax With</h4>
+                            <h2>Any Video</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <video width="100%" height="100%" controls>
+                                <source src="./images/Tourvideo.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="dt-invisible-small"></div>
+            <div class="dt-invisible"></div>
+            <section class="fullwidth-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="section-title ">We are the best in Business</h2>
+                            <div class="dt-toggle-frame-set">
+                                <div class="dt-toggle-frame">
+                                    <h5 class="dt-toggle-accordion active">
+                                        <a href="javascript:void(0)">We have the best Travel Packages</a>
+                                    </h5>
+                                    <div class="dt-toggle-content" style="display:block">
+                                        <div class="block">
+                                            Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even
+                                            slightly believable. If you are going to use a passage of Lorem Ipsum.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dt-toggle-frame">
+                                    <h5 class="dt-toggle-accordion">
+                                        <a href="javascript:void(0)">Best travel guides available throught the trip</a>
+                                    </h5>
+                                    <div class="dt-toggle-content" style="display:none">
+                                        <div class="block">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dt-toggle-frame">
+                                    <h5 class="dt-toggle-accordion">
+                                        <a href="javascript:void(0)">We have the best Travel Packages</a>
+                                    </h5>
+                                    <div class="dt-toggle-content" style="display:none">
+                                        <div class="block">
+                                            Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even
+                                            slightly believable. If you are going to use a passage of Lorem Ipsum.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dt-toggle-frame">
+                                    <h5 class="dt-toggle-accordion">
+                                        <a href="javascript:void(0)">Best travel guides available throught the trip</a>
+                                    </h5>
+                                    <div class="dt-toggle-content" style="display:none">
+                                        <div class="block">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="section-title ">Theme Features</h2>
+                            <div class="dt-ico-content type10">
+                                <div class="icon "><img title="" alt="" src="https://trendytraveldv.wpengine.com/wp-content/uploads/2014/06/feature-icon1@2x.png" width="50" height="20"></div>
+                                <h4><a href="#" target="_blank"> Light Weight </a></h4>
+                                <p>Sed at tellus quis enim dictum mollis. Donec nec interdum nulla. Aenean adipiscing nunc nec augue pretium, eget eros convallis.</p>
+                            </div>
+                            <div class="dt-invisible-small"></div>
+                            <div class="dt-ico-content type10">
+                                <div class="icon "><img title="" alt="" src="https://trendytraveldv.wpengine.com/wp-content/uploads/2014/06/feature-icon2@2x.png" width="47" height="41"></div>
+                                <h4><a href="#" target="_blank"> Product Page </a></h4>
+                                <p>Curabitur placerat pulvinar gravida. Vestibulum nec erat id diam condimentum feugiat. Duis a augue sit amet odio blandit luctus.</p>
+                            </div>
+                            <div class="dt-invisible-small"></div>
+                            <div class="dt-ico-content type10">
+                                <div class="icon "><img title="" alt="" src="https://trendytraveldv.wpengine.com/wp-content/uploads/2014/06/feature-icon3@2x.png" width="42" height="34"></div>
+                                <h4><a href="#" target="_blank"> Latest Design Trend </a></h4>
+                                <p>Aliquam at dolor feugiat, varius velit rhoncus, pellentesque enim. Quisque pharetra in lacus id pretium. Suspendisse est id condimentum.</p>
+                            </div>
+                            <div class="dt-invisible-small"></div>
+                            <div class="dt-ico-content type10">
+                                <div class="icon "><img title="" alt="" src="https://trendytraveldv.wpengine.com/wp-content/uploads/2014/06/feature-icon4@2x.png" width="34" height="52"></div>
+                                <h4><a href="#" target="_blank"> Unlimited Colors </a></h4>
+                                <p>Nulla pharetra tortor massa, et fermentum rhoncus elit consectetur ac. Vivamus rhoncus nisl lectus, sed blandit tortor placerat sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="dt-invisible-small"></div>
+            <div class="dt-invisible"></div>
+            <section class="fullwidth-section">
+                <div class="container">
+                    <h2 class="section-title ">Best Beaches of 2014</h2>
+                    <div class="best-entry-place-wrapper">
+                        <div class="entry-place-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="entry-place-thumb">
+                                        <div class="thumb-inner">
+                                            <a href="./place-detail.html">
+                                                <img src="./images/place1-670x458.jpg" alt="">
+                                                <div class="image-overlay"><span class="image-overlay-inside"></span></div>
+                                            </a>
+                                        </div>
+                                        <a href="./place-detail.html" class="dt-sc-button too-small">View Gallery</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="entry-place-detail">
+                                        <div class="entry-place-title">
+                                            <div class="float-left">
+                                                <h5>
+                                                    <a href="./place-detail.html">Fern Hills River</a>
+                                                </h5>
+                                                <p>Riverhead, NY</p>
+                                            </div>
+                                            <div class="star-rating-wrapper float-right">
+                                                <div class="star-rating"><span style="width:0%"></span></div>(0 Ratings)</div>
+                                        </div>
+                                        <h6>Why it is best?</h6>
+                                        <p>Aliquam bibendum ante ut dui auctor ultricies. Vestibulum ac commodo lorem. Nulla aliquet libero porta laoreet elementum. Pellentesque nec...</p>
+                                        <div class="dt-invisible-small"></div>
+                                        <h6>Hotels to Stay</h6>
+                                        <div class="entry-place-meta">
+                                            <ul>
+
+                                                <li>
+                                                    <ul>
+                                                        <li>
+                                                            <p>Mandrake Hotel, <sub>Macquarie, Sydney, NS‎</sub></p>
+                                                        </li>
+                                                        <li><a href="https://trendytraveldv.wpengine.com/dt_hotels/mandrake-hotel/#hotel_map_785" class="map-marker small"><span class="red"></span>View on Map</a></li>
+                                                    </ul>
+                                                    <div class="star-rating-wrapper">
+                                                        <div class="star-rating"><span style="width:86%"></span></div>(3 Ratings)</div>
+                                                </li>
+                                                <li>
+                                                    <ul>
+                                                        <li>
+                                                            <p>Symphony Maze, <sub>Bella Staduim Road, Brazil</sub></p>
+                                                        </li>
+                                                        <li><a href="https://trendytraveldv.wpengine.com/dt_hotels/symphony-maze/#hotel_map_783" class="map-marker small"><span class="red"></span>View on Map</a></li>
+                                                    </ul>
+                                                    <div class="star-rating-wrapper">
+                                                        <div class="star-rating"><span style="width:86%"></span></div>(3 Ratings)</div>
+                                                </li>
+                                            </ul><a href="https://trendytraveldv.wpengine.com/dt_places/fern-hills-river/" class="aligncenter">Read More</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="">
+                <img src="./images/palm-g95657d048_640.jpg" alt="">
+            </div>
+        </main>
+
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <a href="#" class="scrollup">
+        <i class="fa-sharp fa-solid fa-angle-up"></i>
+    </a>
+
+    <script src="./lib/js/jquery-3.6.1.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js "></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script src="./lib/js/slide.js "></script>
+    <script src="./lib/js/style.js "></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
